@@ -541,11 +541,7 @@
 						}
 					}
 				}
-				for(let i=0;i<4;i++){
-					$("#result"+i).html(Math.round(rssTotal[i]));
-				}
-				[day,hour,minute,second] = timeTran(timeTotal/(1+Number($("#trainingBuff").val())/100));
-				$("#result4").html(timeSS(day,hour,minute,second));
+				trainingResult(rssTotal,timeTotal);
 			}
 		});
 		
