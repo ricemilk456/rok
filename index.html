@@ -658,7 +658,7 @@
 		}
 		function trainingResult(rss,time){
 			for(let i=0;i<4;i++){
-				$("#result"+i).html(rss[i]);
+				$("#result"+i).html(Math.round(rss[i]));
 			}
 			[day,hour,minute,second] = timeTran(time/(1+Number($("#trainingBuff").val())/100));
 			$("#result4").html(timeSS(day,hour,minute,second));
