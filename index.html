@@ -659,5 +659,11 @@
 			[day,hour,minute,second] = timeTran(time/(1+Number($("#trainingBuff").val())/100));
 			$("#result4").html(timeSS(day,hour,minute,second));
 		}
+		function RSTC(level,buff){
+			let tt = [1,2,3,4,6,8,9,10,12];
+			let ad,ah,am,as;
+			[ad,ah,am,as] = timeTran(tt[level-1]*60/(1+buff/100));
+			return timeSS(ad,ah,am,as);
+		}
 	</script>
 </html>
