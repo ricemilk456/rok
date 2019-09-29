@@ -665,5 +665,8 @@
 			[ad,ah,am,as] = timeTran(tt[level-1]*60/(1+buff/100));
 			return timeSS(ad,ah,am,as);
 		}
+		function tranRSS(rss,tax){
+			return Math.round(rss/(1-tax/100));
+		}
 	</script>
 </html>
